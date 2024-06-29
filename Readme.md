@@ -54,6 +54,13 @@ return new class implements ShouldHandle
 ```
 
 ### Usage
-1- Ensure PHP 8.0^.
-2- Install dependencies by running composer install.
-3- Execute the following command in your terminal or command prompt: php ./index.php
+
+To run the code:
+
+1. Ensure PHP 8.0 or later is installed.
+2. Install dependencies by running `composer install`.
+3. Execute the following command in your terminal or command prompt:
+
+```bash
+php ./index.php
+
