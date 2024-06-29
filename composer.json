@@ -1,0 +1,16 @@
+{
+    "name": "as984/data-structures",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "As984\\DataStructures\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmed saed",
+            "email": "103289562+ahmedsaed27@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
