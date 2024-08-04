@@ -2,16 +2,16 @@
 
 namespace As984\DataStructures\linkedList;
 
+use As984\DataStructures\Traits\MethodNotFound;
+
 class LinkedList
 {
+    use MethodNotFound;
+
     public ?LinkedListNode $head = NULL;
     public ?LinkedListNode $tail = NULL;
-    
-    public function __call($methodName, $args)
-    {
-        echo "Method '{$methodName}' not found. Arguments: " . implode(', ', $args) . PHP_EOL;
-        exit();
-    }
+    private int $length = 0;
+
     
     public function push(int $_data): void
     {
@@ -26,6 +26,8 @@ class LinkedList
             $this->tail->next = $newNode;
             $this->tail = $newNode;
         }
+
+        $this->length++;
     }
 
     public function pushAfter(LinkedListNode|int $targetData, int $newData): void
@@ -52,6 +54,8 @@ class LinkedList
                 $this->tail = $newNode;
             }
         }
+
+        $this->length++;
     }
 
     public function pushBefore(LinkedListNode|int $targetData, int $newData): void
@@ -85,6 +89,8 @@ class LinkedList
             $currentNode->next->prev = $newNode;
             $currentNode->next = $newNode;
         }
+
+        $this->length++;
     }
 
     public function remove(LinkedListNode|int $targetData): void
@@ -102,6 +108,7 @@ class LinkedList
             } else {
                 $this->tail = NULL;
             }
+            $this->length--;
             return;
         }
 
@@ -122,6 +129,8 @@ class LinkedList
             if ($currentNode->prev !== NULL) {
                 $currentNode->prev->next = $currentNode->next;
             }
+
+            $this->length--;
         }
     }
 
@@ -141,6 +150,11 @@ class LinkedList
             echo "Node $currentNodeData points to Node $nextNodeData and comes from Node $prevNodeData" . PHP_EOL;
             $iterator->next(); // Move to the next node
         }
+    }
+
+    public function getLength(): int
+    {
+        return $this->length;
     }
 
 }
