@@ -47,8 +47,8 @@ class Stack
     {
         while (!$this->isEmpty()) {
             echo 'lenght: ' . $this->list->getLength()  . PHP_EOL;
-            echo "Top element: " . $this->peek() . PHP_EOL;
-            echo "Popped element: " . $this->pop() . PHP_EOL;
+            echo 'Top element: ' . $this->peek() . PHP_EOL;
+            echo 'Popped element: ' . $this->pop() . PHP_EOL;
             
             if($this->list->getLength()  == 0){
                 echo 'lenght ' . $this->list->getLength()  . PHP_EOL;
