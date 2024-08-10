@@ -2,6 +2,7 @@
 
 namespace As984\DataStructures\Facade;
 use As984\DataStructures\linkedList\LinkedList;
+use As984\DataStructures\Queue\Queue;
 use As984\DataStructures\stack\Stack;
 
 class DataStructuresFacade
@@ -11,10 +12,14 @@ class DataStructuresFacade
         return new LinkedList;
     }
 
-
     public static function stack(): Stack
     {
         return new Stack;
+    }
+    
+    public static function queue(): Queue
+    {
+        return new Queue;
     } 
 
 }
