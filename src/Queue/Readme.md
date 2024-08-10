@@ -74,13 +74,3 @@ $queue->printQueue();
 ```
 
 
-### Explanation:
-- **Table of Contents**: Provides quick navigation to different sections of the README.
-- **Installation**: Describes the directory structure and where to place files.
-- **Usage**: Detailed instructions on how to use the queue with example code.
-- **Contributing**: Encourages contributions and provides guidelines.
-- **License**: Mentions the licensing details.
-- **Contact**: Provides a way to contact the project owner for further information.
-
-This `README.md` file is comprehensive and will help users understand and effectively use your queue implementation.
-
