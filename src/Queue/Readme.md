@@ -5,14 +5,11 @@ This repository contains a PHP implementation of a Queue data structure, built o
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Enqueue Elements](#enqueue-elements)
-  - [Dequeue Elements](#dequeue-elements)
-  - [Peek at the Front Element](#peek-at-the-front-element)
-  - [Check if the Queue is Empty](#check-if-the-queue-is-empty)
-  - [Print the Queue](#print-the-queue)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+  - Enqueue Elements
+  - Dequeue Elements
+  - Peek at the Front Element
+  - Check if the Queue is Empty
+  - Print the Queue
 
 ## Installation
 
