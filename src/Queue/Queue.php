@@ -2,9 +2,11 @@
 
 namespace As984\DataStructures\Queue;
 
+use As984\DataStructures\Contracts\IsEmpty;
+use As984\DataStructures\Contracts\Peek;
 use As984\DataStructures\linkedList\LinkedList;
 
-class Queue
+class Queue implements IsEmpty , Peek
 {
     private LinkedList $list;
 

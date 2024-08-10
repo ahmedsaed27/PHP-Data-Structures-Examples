@@ -2,10 +2,12 @@
 
 namespace As984\DataStructures\stack;
 
+use As984\DataStructures\Contracts\IsEmpty;
+use As984\DataStructures\Contracts\Peek;
 use As984\DataStructures\linkedList\LinkedList;
 use As984\DataStructures\Traits\MethodNotFound;
 
-class Stack
+class Stack implements IsEmpty , Peek
 {
     use MethodNotFound;
 
